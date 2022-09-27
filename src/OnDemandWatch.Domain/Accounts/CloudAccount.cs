@@ -1,4 +1,5 @@
 ﻿using Innovt.Domain.Core.Model;
+using OnDemandWatch.Domain.CloudProviders;
 
 namespace OnDemandWatch.Domain.Accounts;
 
@@ -11,7 +12,7 @@ public class CloudAccount : Entity<Guid>
     public string? RoleArn { get; set; }// authorization type.  per provider
 
     public CloudProvider? CloudProvider { get; set; }
-    public List<Resource>? Resources { get; set; }
+    public List<Service>? Resources { get; set; } //Conta Amazon com os resources x e y. 
     public Dictionary<string, string>? Tags { get; set; }
 
     public void AddResource()

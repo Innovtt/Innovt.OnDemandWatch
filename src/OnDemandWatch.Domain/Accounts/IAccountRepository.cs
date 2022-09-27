@@ -7,7 +7,4 @@ public interface IAccountRepository : IRepository<Account>
 
     //AddUser
     //Add Cloud 
-
-
-
 }

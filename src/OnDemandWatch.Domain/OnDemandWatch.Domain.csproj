@@ -11,9 +11,4 @@
     <PackageReference Include="Innovt.Domain" Version="6.1.11" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="CloudProviders\" />
-    <Folder Include="CloudServices\" />
-  </ItemGroup>
-
 </Project>

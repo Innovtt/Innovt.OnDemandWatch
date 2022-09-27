@@ -2,9 +2,6 @@
 
 public interface IAccountApplication
 {
-
-    //add user 
-
+    //add user
     ///add cloudaccount
-    
 }

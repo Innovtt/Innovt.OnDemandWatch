@@ -8,7 +8,12 @@
 
   <ItemGroup>
     <Folder Include="Application\" />
+    <Folder Include="Infrastructure\IOC\" />
     <Folder Include="Infrastructure\Repository\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OnDemandWatch.Domain\OnDemandWatch.Domain.csproj" />
   </ItemGroup>
 
 </Project>
