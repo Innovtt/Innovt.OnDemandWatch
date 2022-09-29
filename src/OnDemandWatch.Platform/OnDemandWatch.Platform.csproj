@@ -8,10 +8,12 @@
 
   <ItemGroup>
     <Folder Include="Application\" />
-    <Folder Include="Infrastructure\IOC\" />
     <Folder Include="Infrastructure\Repository\" />
   </ItemGroup>
-
+	<ItemGroup>
+		<PackageReference Include="Innovt.CrossCutting.Log.Serilog" Version="6.1.15" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+	</ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OnDemandWatch.Domain\OnDemandWatch.Domain.csproj" />
   </ItemGroup>

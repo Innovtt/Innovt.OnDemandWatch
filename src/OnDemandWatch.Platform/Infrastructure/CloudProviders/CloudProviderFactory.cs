@@ -8,8 +8,11 @@ namespace OnDemandWatch.Platform.Infrastructure.CloudProviders;
 
 public class CloudProviderFactory: ICloudProviderServiceFactory
 {
-    public ICloudProviderService CreateCloudService(CloudProvider provider)
+    public ICloudProviderService? CreateCloudService(CloudProvider provider)
     {
+        if (provider == null) throw new ArgumentNullException(nameof(provider));
         
+
+        return provider is Aws ? new AwsProviderService() : null;
     }
 }

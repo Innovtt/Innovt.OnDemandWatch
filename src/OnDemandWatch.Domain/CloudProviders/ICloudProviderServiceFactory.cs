@@ -2,5 +2,5 @@
 
 public interface ICloudProviderServiceFactory
 {
-    ICloudProviderService CreateCloudService(CloudProvider provider);
+    ICloudProviderService? CreateCloudService(CloudProvider provider);
 }

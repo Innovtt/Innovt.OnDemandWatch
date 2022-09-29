@@ -4,8 +4,7 @@
 
 namespace OnDemandWatch.Domain.CloudProviders.Filters;
 
-public class ResourceFilter
+//should act as a specification 
+public class ServiceFilter
 {
-    public ServiceType Type { get; set; }
-
 }
